@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang</title>
+</head>
+<body>
+    <center>
+        <img src="gemoy.jpg" >
+        <h2>
+            Maafin Aku ka rosmell
+        </h2>
+
+    </center>
+
+    <button id="mf" onclick="muncul()">
+        Dimaafin
+        
+    </button>
+    <button id="btn" onclick="gm(this)" style="position: relative;">
+        Gamau
+    </button>
+
+    <audio src="perfect_edseren.mp3"
+    autoplay="autoplay" hidden="hidden">
+    </audio>
+
+    <script>
+
+    function muncul() {
+            alert("MAACIHH UDH DIMAAFINN!");
+        }
+    
+    function gm(id)
+    {
+        var mau  = document.getElementById('mf'); 
+        var i = Math.floor(Math.random() * 300) + 1;
+        var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+        id.style.left = i + "px";
+        id.style.left = j + "px";
+    }
+    </script>
+
+
+
+</body>
+</html>
